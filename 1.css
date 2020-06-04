@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: orange;
+}
+
+.info-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+    color: #fff;
+}
+.info-wrapper .info-title {}
+.info-content-wrapper {
+    /* word-break:break-word; */
+    padding: 30px;
+}
+.info-content-wrapper .style-1 {} 
+.info-content-wrapper .style-1 .title {}
+.info-content-wrapper .style-1 .content {
+    padding: 20px;
+}
+.info-wrapper .style-1 .content,.info-wrapper .style-2 .content,.info-wrapper .style-3 .content {
+    padding: 20px;
+}
+.info-wrapper .style-2  .order-wrapper, .info-wrapper .style-3  .order-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+.info-wrapper .style-3 .order-number li,.info-wrapper .style-3 .unorder-number li {
+    margin-bottom: 10px;
+}
+.info-wrapper .style-2 .order-wrapper .order-title,.info-wrapper .style-3 .order-wrapper .order-title {
+    padding-right: 20px;
+}
+.info-content-wrapper .style-2 .order-wrapper .order-content {
+    word-break:break-word;
+}
+.info-wrapper .style-3 .order-number,.info-wrapper .style-3 .unorder-number {
+    padding: 20px 40px;
+}
+
+
+.info-wrapper .style-3 .order-number a {
+    color: #fff
+}
+.info-wrapper .style-3 .txt {
+    margin-bottom: 20px;
+}
