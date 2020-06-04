@@ -49,3 +49,81 @@ body {
 .info-wrapper .style-3 .txt {
     margin-bottom: 20px;
 }
+
+#demo-table{
+	width: 99.9%;
+	background-color: #ffffff;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+#demo-table td, #demo-table th
+{
+    padding: 5px;
+}
+
+#demo-table td
+{
+	color: #666666;
+	border: #ddd 1px solid;
+}
+
+#demo-table th
+{
+	background-color: #1a1a1a;
+	color:#ffffff;
+	border: #1a1a1a 1px solid;
+	text-align: center;
+}
+
+
+
+	
+
+@media only screen and (max-width: 720px) {
+
+	
+	thead, tbody, th, td, tr { 
+		display: block; 
+	}
+
+	/* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+
+	 tr { border: 1px solid #ccc; margin-bottom: 10px; background-color: #ffffff;}
+
+ td { 
+		/* Behave  like a "row" */
+		border: none !important;
+		border-bottom: 1px solid #eee !important;  
+		position: relative;
+		padding-left: 35% !important; 
+		white-space: normal;
+		text-align:left;
+	}
+
+ td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 30%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+		color: #1a1a1a;
+	}
+ td:before { 
+    content: attr(data-title);
+    white-space: break-spaces
+
+     }
+  
+  
+}
